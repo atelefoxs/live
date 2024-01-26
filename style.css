@@ -1,0 +1,39 @@
+/* 设置整个页面的样式 */
+body {
+    margin: 0; /* 移除默认边距 */
+    height: 100vh; /* 设置高度为视窗的高度 */
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom, 
+        red 0%, red 14.28%, 
+        orange 14.28%, orange 28.57%, 
+        yellow 28.57%, yellow 42.85%, 
+        green 42.85%, green 57.14%, 
+        cyan 57.14%, cyan 71.42%, 
+        blue 71.42%, blue 85.71%, 
+        violet 85.71%, violet 100%
+    );
+}
+
+/* 设置方形卡片的样式，添加圆角 */
+.card {
+    position: absolute; /* 绝对定位 */
+    width: 100px; /* 卡片宽度 */
+    height: 100px; /* 卡片高度 */
+    background-color: white; /* 卡片背景颜色 */
+    border-radius: 15px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    display: flex; /* 使用Flexbox进行布局 */
+    align-items: center; /* 垂直居中内容 */
+    justify-content: center; /* 水平居中内容 */
+    text-align: center; /* 文本居中 */
+    color: black; /* 文本颜色 */
+    font-size: 16px; /* 文本字体大小 */
+}
+
+/* 设置卡片内部链接的样式 */
+.card a {
+    text-decoration: none; /* 去除下划线 */
+    color: black; /* 链接文本颜色 */
+}
