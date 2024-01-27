@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var card = document.getElementById('movingCard');
-    var velocityX = 15;
-    var velocityY = 15;
+    var velocityX = 10;
+    var velocityY = 10;
     var posX = 0;
     var posY = 0;
 
