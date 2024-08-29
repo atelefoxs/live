@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机跳转网页</title>
+    <script>
+        window.onload = function() {
+            // 定义两个目标网页的相对路径
+            var urls = [
+                "./Gallery-main1/index.html", // 第一个目标网页
+                "./Gallery-main2/index.html"  // 第二个目标网页
+            ];
+
+            // 随机选择一个网址
+            var randomIndex = Math.floor(Math.random() * urls.length);
+
+            // 跳转到选中的网页
+            window.location.href = urls[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <h1>正在跳转，请稍候...</h1>
+</body>
+</html>
