@@ -4,10 +4,10 @@ var OriginTitile = document.title,
   titleTime;
 document.addEventListener("visibilitychange", function () {
   if (document.hidden) {
-    document.title = "(つェ⊂) 你不会近视了叭？";
+    document.title = "(つェ⊂)";
     clearTimeout(titleTime);
   } else {
-    document.title = "(*´∇｀*) 怪不得看不出我钟意你";
+    document.title = "(*´∇｀*)";
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
     }, 2000);
