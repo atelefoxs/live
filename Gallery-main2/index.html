@@ -435,6 +435,19 @@
     <canvas id="canvas"
       >你的浏览器不支持HTML5画布技术，请使用支持HTML5的浏览器(http://keleyi.com/a/bjac/g039tue3.htm)</canvas
     >
-    <audio src="There For You.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
+    <audio src="There For You1.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto"></audio>
   </body>
+  <script type="text/javascript">
+    window.onload = function(){
+        setInterval("toggleSound()",1);
+    }
+
+    function toggleSound() {
+        var music = document.getElementById("aud");
+        if (music.paused) {
+            music.paused=false;
+            music.play();
+        }
+    }
+  </script>
 </html>
